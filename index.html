@@ -1,0 +1,202 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id="keys">
+            <button onclick="appendToDisplay('+')" class="operator">+</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('-')" class="operator">-</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('')" class="operator">*</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('/')" class="operator">/</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="clearDisplay()" class="operator">AC</button>
+            <button onclick="deleteChar()" class="toclear">DE</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+ -->
+
+
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator </title>
+    <link rel="stylesheet" href="./style.css">
+ </head>
+ <body>
+    <div class = "container">
+        <form name="cacl">
+            <input type="text" name = "text" id ="screen" readonly>
+        </form>
+        <div class ="btns">
+            <button onclick="document.cacl.text.value=Math.sin(document.cacl.text.value)">Sin</button>
+            <button onclick="document.cacl.text.value=Math.cos(document.cacl.text.value)">Cos</button>
+            <button onclick="document.cacl.text.value=Math.tan(document.cacl.text.value)">Tan</button>
+            <button onclick="document.cacl.text.value=Math.Log(document.cacl.text.value)">log</button>
+
+            <button onclick="document.cacl.text.value=Math.pow(document.cacl.text.value,2)">x<sup>2</suo></button>
+            <button onclick="document.cacl.text.value=Math.pow(document.cacl.text.value,3)">x<sup>3</sup></button>
+            
+            <button onclick="document.cacl.text.value+='1'">1</button>
+            <button onclick="document.cacl.text.value+='2'">2</button>
+            <button onclick="document.cacl.text.value+='3'">3</button>
+            <button onclick="document.cacl.text.value+='4'">4</button>
+
+            <button onclick="document.cacl.text.value+='5'">5</button>
+            <button onclick="document.cacl.text.value+='6'">6</button>
+            <button onclick="document.cacl.text.value+='7'">7</button>
+            <button onclick="document.cacl.text.value+='8'">8</button>
+
+            <button onclick="document.cacl.text.value+='9'">9</button>
+            <button onclick="document.cacl.text.value+='0'">0</button>
+            <button onclick="document.cacl.text.value+='.'">.</button>
+            <button onclick="document.cacl.text.value+='*'">*</button>
+
+            <button onclick="document.cacl.text.value+='+'">+</button>
+            <button onclick="document.cacl.text.value+='-'">-</button>
+            <button onclick="document.cacl.text.value+='/'">/</button>
+            <button onclick="document.cacl.text.value+='%'">%</button>
+
+            <button onclick="document.cacl.text.value=eval(document.cacl.text.value)">=</button>
+            <button onclick="document.cacl.text.value=''">c</button>
+            <button onclick="del()">DEL</button>
+             
+        </div>
+    </div>
+
+    <script type ="text/javascript">
+        
+        function del(){
+            var x=document.getElemetById('screen').value;
+            document.getElementById('screen').value=x.substr(0,x.length-1);
+        }
+    </script>
+    
+ </body>
+ </html> -->
+
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" disabled>
+    <div class="buttons">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="deleteChar()">DEL</button>
+      <button onclick="appendOperator('(')">(</button>
+      <button onclick="appendOperator(')')">)</button>
+      <button onclick="appendOperator('^')">^</button>
+      <button onclick="appendOperator('sqrt')">√</button>
+      <button onclick="appendOperator('sin')">sin</button>
+      <button onclick="appendOperator('cos')">cos</button>
+      <button onclick="appendOperator('tan')">tan</button>
+      <button onclick="appendOperator('log')">log</button>
+      <button onclick="appendOperator('pi')">π</button>
+      <button onclick="appendNumber(7)">7</button>
+      <button onclick="appendNumber(8)">8</button>
+      <button onclick="appendNumber(9)">9</button>
+      <button onclick="appendNumber(4)">4</button>
+      <button onclick="appendNumber(5)">5</button>
+      <button onclick="appendNumber(6)">6</button>
+      <button onclick="appendNumber(1)">1</button>
+      <button onclick="appendNumber(2)">2</button>
+      <button onclick="appendNumber(3)">3</button>
+      <button onclick="appendNumber(0)">0</button>
+      <button onclick="appendOperator('+')">+</button>
+      <button onclick="appendOperator('-')">-</button>
+      <button onclick="appendOperator('*')">*</button>
+      <button onclick="appendOperator('/')">/</button>
+      <button onclick="appendOperator('.')">.</button>
+      <button onclick="calculate()">=</button>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" disabled>
+    <div class="buttons">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="deleteChar()">DEL</button>
+      <button onclick="appendOperator('(')">(</button>
+      <button onclick="appendOperator(')')">)</button>
+      <button onclick="appendOperator('^')">^</button>
+      <button onclick="appendOperator('sqrt')">√</button>
+      <button onclick="appendOperator('sin')">sin</button>
+      <button onclick="appendOperator('cos')">cos</button>
+      <button onclick="appendOperator('tan')">tan</button>
+      <button onclick="appendOperator('ln')">ln</button>
+      <button onclick="appendOperator('log')">log</button>
+      <button onclick="appendOperator('pi')">π</button>
+      <button onclick="appendNumber(7)">7</button>
+      <button onclick="appendNumber(8)">8</button>
+      <button onclick="appendNumber(9)">9</button>
+      <button onclick="appendNumber(4)">4</button>
+      <button onclick="appendNumber(5)">5</button>
+      <button onclick="appendNumber(6)">6</button>
+      <button onclick="appendNumber(1)">1</button>
+      <button onclick="appendNumber(2)">2</button>
+      <button onclick="appendNumber(3)">3</button>
+      <button onclick="appendNumber(0)">0</button>
+      <button onclick="appendOperator('+')">+</button>
+      <button onclick="appendOperator('-')">-</button>
+      <button onclick="appendOperator('*')">*</button>
+      <button onclick="appendOperator('/')">/</button>
+      <button onclick="appendOperator('.')">.</button>
+      <button onclick="calculate()">=</button>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html> -->
